@@ -20,9 +20,7 @@ body {
 	font-weight: 300;
 }
 
-.wrapper{
-	padding:20px 180px;
-}
+
 /*==============================================*/
 /* Navigation                                   */
 /*==============================================*/
@@ -31,18 +29,6 @@ body {
  * This section should contain at least the
  * following elements: header, nav, ul, li, a, div.
  */
- nav{
-	position: fixed;
- }
-.navbar-nav{
-	flex-direction: row;
- }
-.nav li{
-	padding-left:20px;
-}
-nav ul{
-	margin-left:400px;
-}
 
 /*==============================================*/
 /* Articles                                     */
