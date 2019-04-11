@@ -20,30 +20,65 @@
         <nav class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <il class="nav-item active">
-                    <a class="nav-link" href="#">Accueil</a>
+                    <a class="nav-link" href="#accueil">Accueil</a>
                 </il>
                 <il class="nav-item">
-                    <a class="nav-link" href="#">Recettes</a>
+                    <a class="nav-link" href="#recettes">Recettes</a>
                 </il>
                 <il class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </il>
             </ul>
         </nav>
     </header>
-    <article>
+    <main class="container">
         <section id="accueil">
-            
+            <h1 class="text-center">Page title</h1>
+            <h2>Accueil</h2>
+            <div class="container">
+                <div id="articles" class="row"></div>
+            </div>
         </section><!-- Close accueil -->
         <section id="recettes">
-            <div style="position: absolute; width: 100%; height: 1000px"></div>
+            <h2>Recettes</h2>
+            <ul id="recipes">
+            </ul>
         </section><!-- Close recettes -->
         <section id="contact">
-
+            <h2>Contact</h2>
+            <form id="contact-form" action="http://www.iro.umontreal.ca/~lapalme/ift1005/Exercices/9/echoValeurs.cgi" method="POST">
+                <div class="form-group">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" class="form-control" name="client-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Adresse :</label>
+                    <input type="text" id="address" class="form-control" name="client-address" placeholder="no, rue, app. ou bureau" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="postal-code">Code postal :</label>
+                        <input type="text" id="postal-code" class="form-control" name="client-postal-code" pattern="^[A-Za-z][0-9][A-Za-z]\s[0-9][A-Za-z][0-9]$" placeholder="A0A 0A0" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="city">Ville :</label>
+                        <input type="text" id="city" class="form-control" name="client-city" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Numéro de téléphone :</label>
+                    <input type="tel" id="phone" class="form-control" name="client-phone" pattern="^514\d{7}|483\d{7}|450\d{7}" placeholder="YYYXXXXXXX" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description :</label>
+                    <textarea name="" id="description" class="form-control" cols="30" rows="10" placeholder="Description de ce que vous aimeriez acheter." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Contactez-moi</button>
+            </form>
         </section><!-- Close contact -->
-    </article>
+    </main>
     <footer>
-
+        <p>&copy; 2019 <span></span> Enr.</p>
     </footer>
     <!-- JavaScript libraries -->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"

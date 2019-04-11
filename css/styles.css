@@ -2,7 +2,7 @@
 /* Fonts                                        */
 /*==============================================*/
 
-:root,
+/* :root,
 body, 
 header, 
 footer, 
@@ -13,12 +13,12 @@ ul, ol, li,
 p, a, span,
 label, input, button {
 	font-family: 'Roboto', arial;
-};
+}; */
 
-body {
+/* body {
 	font-size: 1rem;
 	font-weight: 300;
-}
+} */
 
 
 /*==============================================*/
@@ -38,6 +38,11 @@ body {
  * This section should contain at least the
  * following elements: h1, h2, section, article.
  */
+
+section {
+	padding-top: 56px;
+}
+
 
 /*==============================================*/
 /* Recipes                                      */
