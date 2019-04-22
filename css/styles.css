@@ -115,6 +115,12 @@ footer {
 	position: relative;
 }
 
-footer p {
+footer p,
+#social-icn {
 	margin: 10px;
+}
+
+#social-icn i {
+	font-size: 1.5em;
+	margin: 0 2px;
 }
