@@ -77,6 +77,10 @@ section h2 {
 article {
 	margin-bottom: 20px;
 }
+body{
+  background-image: url("../assets/background.jpg");
+  background-repeat: repeat;
+}
 
 
 /*==============================================*/
