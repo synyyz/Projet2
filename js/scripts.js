@@ -7,8 +7,9 @@
 
 var altImages = {
   articles: ["article1.svg", "article2.jpg", "article3.jpg"],
-  recipes: []
+  recipes: ["recette1.jpg","recette2.jpg","recette3.jpg","recette4.jpg","recette5.jpg","recette6.jpg","recette7.jpg","recette8.jpg","recette9.jpg","recette10.jpg","recette11.jpg","recette12.jpg"]
 };
+
 
 // When document is ready
 // ======================================================
@@ -104,5 +105,4 @@ var buildRecettes = function() {
  */
 var addCopyright = function() {
   $("footer span").text(data.firstName + " " + data.lastName);
-};
-
+}
