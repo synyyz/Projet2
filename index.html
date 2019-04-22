@@ -31,22 +31,24 @@
             </ul>
         </nav>
     </header>
-    <main class="container">
-        <section id="accueil">
+    <main>
+        <div id="hero" class="jumbotron jumbotron-fluid">
             <h1 class="text-center">Page title</h1>
-            <h2>Accueil</h2>
+        </div>
+        <section id="accueil">
+            <h2 class="text-center">Accueil</h2>
             <div class="container">
                 <div id="articles" class="row"></div>
             </div>
         </section><!-- Close accueil -->
         <section id="recettes">
-            <h2>Recettes</h2>
-            <ul id="recipes">
+            <h2 class="text-center">Recettes</h2>
+            <ul id="recipes" class="container">
             </ul>
         </section><!-- Close recettes -->
         <section id="contact">
-            <h2>Contact</h2>
-            <form id="contact-form" action="http://www.iro.umontreal.ca/~lapalme/ift1005/Exercices/9/echoValeurs.cgi" method="POST">
+            <h2 class="text-center">Contact</h2>
+            <form id="contact-form" class="container" action="http://www.iro.umontreal.ca/~lapalme/ift1005/Exercices/9/echoValeurs.cgi" method="POST">
                 <div class="form-group">
                     <label for="name">Nom :</label>
                     <input type="text" id="name" class="form-control" name="client-name" placeholder="Prénom Nom" required>
@@ -77,8 +79,10 @@
             </form>
         </section><!-- Close contact -->
     </main>
-    <footer>
-        <p>&copy; 2019 <span></span> Enr.</p>
+    <footer class="container-fluid text-center text-md-left bg-light">
+        <div class="row">
+            <p class="col-md-6">&copy; 2019 <span></span> Enr.</p>
+        </div>
     </footer>
     <!-- JavaScript libraries -->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"
