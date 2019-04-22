@@ -18,7 +18,7 @@ Les consignes sont disponibles à l'adresse : https://mihai-teaching.github.io/w
 
 ## Contenu du projet
 
-Le présent projet utilise les librairies Bootstrap et jQuery, téléchargées directement de leur CDN.
+Le présent projet utilise les librairies Bootstrap, Font Awesome et jQuery, téléchargées directement de leur CDN.
 
 Le présent projet contient les fichiers et dossiers suivants :
 - *README.md :* le présent fichier. Contient le rapport de notre projet;
