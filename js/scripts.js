@@ -62,7 +62,7 @@ var buildAccueil = function() {
   data.articles.forEach((article, index) => {
     myArticles.push(
       "<article id='article" + index + "'class='col-sm card'>" +
-      "<img class='card-img-top' src='/assets/" + altImages.articles[index] + "' alt='" + article.imgUrl + "'>" +
+      "<img class='card-img-top' src='./assets/" + altImages.articles[index] + "' alt='" + article.imgUrl + "'>" +
       "<div class='card-body'>" +
       "<h3 class='card-title'>" + article.title + "</h3>" +
       "<h4 class='card-subtitle mb-2'>" + article.subtitle + "</h4>" +
@@ -86,7 +86,7 @@ var buildRecettes = function() {
   data.recipes.forEach((recipe, index) => {
     myRecipes.push(
       "<li id='recipe" + index + "' class ='recipe card'>" +
-      "<img class='card-img-top' src='/assets/" + altImages.recipes[index] + "' alt='No image.'>" +
+      "<img class='card-img-top' src='./assets/" + altImages.recipes[index] + "' alt='No image.'>" +
       "<div class='card-body'>" +
       "<p class='card-text'>" + recipe.description + "</p>" +
       "<p class='card-text'>" + recipe.price + "$</p>" +
