@@ -13,12 +13,12 @@ ul, ol, li,
 p, a, span,
 label, input, button {
 	font-family: 'Roboto', arial;
-}; */
+};
 
-/* body {
+body {
 	font-size: 1rem;
 	font-weight: 300;
-} */
+}; */
 
 
 /*==============================================*/
@@ -39,8 +39,43 @@ label, input, button {
  * following elements: h1, h2, section, article.
  */
 
+#hero {
+	padding-top: 55px;
+	margin-top: 56px;
+	margin-bottom: 0;
+	position: relative;
+	z-index: 1;
+}
+
+#hero::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url(/assets/ramiro-mendes-371655-unsplash.jpg) center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 1;
+}
+
+#hero h1 {
+	color: rgb(254, 255, 215);
+	background-color: rgb(173, 83, 83, .6);
+}
+
 section {
 	padding-top: 56px;
+}
+
+section h2 {
+	margin-bottom: 40px;
+}
+
+article {
+	margin-bottom: 20px;
 }
 
 
@@ -62,6 +97,10 @@ section {
  * following elements: h1, label, input.
  */
 
+ #contact {
+	 margin-bottom: 20px;
+ }
+
 /*==============================================*/
 /* Footer                                       */
 /*==============================================*/
@@ -70,3 +109,12 @@ section {
  * This section should contain at least the
  * following elements: p.
  */
+
+footer {
+	height: 50px;
+	position: relative;
+}
+
+footer p {
+	margin: 10px;
+}

@@ -2,6 +2,14 @@
 // js / scripts.js
 // ======================================================
 
+// Replacement images for missing images
+// ======================================================
+
+var altImages = {
+  articles: ["article1.svg", "article2.jpg", "article3.jpg"],
+  recipes: []
+};
+
 // When document is ready
 // ======================================================
 
@@ -51,13 +59,15 @@ var buildAccueil = function() {
 
   var myArticles = [];
 
-  data.articles.forEach(article => {
+  data.articles.forEach((article, index) => {
     myArticles.push(
-      "<article class='col-sm'>" +
-      "<img src='" + article.imgUrl + "' alt='" + article.imgUrl + "'>" +
-      "<h3>" + article.title + "</h3>" +
-      "<h4>" + article.subtitle + "</h4>" +
-      "<p>" + article.content + "</p>" +
+      "<article id='article" + index + "'class='col-sm card'>" +
+      "<img class='card-img-top' src='/assets/" + altImages.articles[index] + "' alt='" + article.imgUrl + "'>" +
+      "<div class='card-body'>" +
+      "<h3 class='card-title'>" + article.title + "</h3>" +
+      "<h4 class='card-subtitle mb-2'>" + article.subtitle + "</h4>" +
+      "<p class='card-text'>" + article.content + "</p>" +
+      "</div>" +
       "</article>"
     );
   });
@@ -73,12 +83,14 @@ var buildAccueil = function() {
 var buildRecettes = function() {
   var myRecipes = [];
 
-  data.recipes.forEach(recipe => {
+  data.recipes.forEach((recipe, index) => {
     myRecipes.push(
-      "<li class ='recipe'>" +
-      "<img src='" + recipe.imgUrl + "' alt='No image.'>" +
-      "<p>" + recipe.description + "</p>" +
-      "<p>" + recipe.price + "$</p>" +
+      "<li id='recipe" + index + "' class ='recipe card'>" +
+      "<img class='card-img-top' src='/assets/" + altImages.recipes[index] + "' alt='No image.'>" +
+      "<div class='card-body'>" +
+      "<p class='card-text'>" + recipe.description + "</p>" +
+      "<p class='card-text'>" + recipe.price + "$</p>" +
+      "</div>" +
       "</li>"
     );
   });
