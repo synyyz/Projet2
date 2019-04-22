@@ -1,7 +1,7 @@
 # IFT1005A-Projet2
 Projet 2 sur le design et développement Web réalisé en équipe dans le cadre du cours IFT1005 A, H2019.
 
-Le résultat final est disponible à l'adresse : 
+Le résultat final est disponible à l'adresse : https://www.webdepot.umontreal.ca/Usagers/p1215167/MonDepotPublic/IFT1005-Projet-2/index.html?uniq=6y4q18&fbclid=IwAR2rDU9RpDlkuhM3G15VYxpk0Ky7FLOIWmbDvoJB7JsuQc-hwsbV58QqNGg
 
 ## Échéance
 
