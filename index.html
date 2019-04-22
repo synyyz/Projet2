@@ -47,36 +47,46 @@
             </ul>
         </section><!-- Close recettes -->
         <section id="contact">
-            <h2 class="text-center">Contact</h2>
-            <form id="contact-form" class="container" action="http://www.iro.umontreal.ca/~lapalme/ift1005/Exercices/9/echoValeurs.cgi" method="POST">
-                <div class="form-group">
-                    <label for="name">Nom :</label>
-                    <input type="text" id="name" class="form-control" name="client-name" placeholder="Prénom Nom" required>
-                </div>
-                <div class="form-group">
-                    <label for="address">Adresse :</label>
-                    <input type="text" id="address" class="form-control" name="client-address" placeholder="Numéro civique, rue, numéro d'appartement ou de bureau" required>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="postal-code">Code postal :</label>
-                        <input type="text" id="postal-code" class="form-control" name="client-postal-code" pattern="^[A-Za-z][0-9][A-Za-z]\s[0-9][A-Za-z][0-9]$" placeholder="A0A 0A0" required>
+                <div class="card">
+                        <div class="alert alert-primary" role="alert">
+                        <h5 class="card-header info-color white-text text-center py-4">
+                                    <strong>Contact</strong>
+                        </h5>
+                        </div>
+                        <div class="card-body px-lg-5">
+                        <form id="contact-form" class="container" action="http://www.iro.umontreal.ca/~lapalme/ift1005/Exercices/9/echoValeurs.cgi" method="POST">
+                            
+                            <div class="form-group">
+                                    <label for="name">Nom :</label>
+                                    <input type="text" id="name" class="form-control" name="client-name" placeholder="Prénom Nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Adresse :</label>
+                                <input type="text" id="address" class="form-control" name="client-address" placeholder="Numéro civique, rue, numéro d'appartement ou de bureau" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="postal-code">Code postal :</label>
+                                    <input type="text" id="postal-code" class="form-control" name="client-postal-code" pattern="^[A-Za-z][0-9][A-Za-z]\s[0-9][A-Za-z][0-9]$" placeholder="A0A 0A0" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="city">Ville :</label>
+                                    <input type="text" id="city" class="form-control" name="client-city" placeholder="Ville" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Numéro de téléphone :</label>
+                                <input type="tel" id="phone" class="form-control" name="client-phone" pattern="^514\d{7}|483\d{7}|450\d{7}" placeholder="YYYXXXXXXX" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Description :</label>
+                                <textarea name="" id="description" class="form-control" cols="30" rows="10" placeholder="Description de ce que vous aimeriez acheter." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-block">Contactez-moi</button>
+                        </form>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label for="city">Ville :</label>
-                        <input type="text" id="city" class="form-control" name="client-city" placeholder="Ville" required>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Numéro de téléphone :</label>
-                    <input type="tel" id="phone" class="form-control" name="client-phone" pattern="^514\d{7}|483\d{7}|450\d{7}" placeholder="YYYXXXXXXX" required>
-                </div>
-                <div class="form-group">
-                    <label for="description">Description :</label>
-                    <textarea name="" id="description" class="form-control" cols="30" rows="10" placeholder="Description de ce que vous aimeriez acheter." required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Contactez-moi</button>
-            </form>
+            
         </section><!-- Close contact -->
     </main>
     <footer class="container-fluid text-center text-md-left bg-light">

@@ -89,8 +89,10 @@ var buildRecettes = function() {
       "<li id='recipe" + index + "' class ='recipe card'>" +
       "<img class='card-img-top' src='./assets/" + altImages.recipes[index] + "' alt='No image.'>" +
       "<div class='card-body'>" +
-      "<p class='card-text'>" + recipe.description + "</p>" +
-      "<p class='card-text'>" + recipe.price + "$</p>" +
+      "<div class='p-3 mb-2 bg-danger text-white'>"+"<p class='card-text'>" + recipe.description + "</p>" +
+      "</div>"+
+      "<div class='shadow p-3 mb-5 bg-white rounded' >"+"<p class='card-text text-success'>" + recipe.price + "$</p>"+
+      "</div>"+
       "</div>" +
       "</li>"
     );
