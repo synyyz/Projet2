@@ -2,7 +2,7 @@
 /* Fonts                                        */
 /*==============================================*/
 
-:root,
+/* :root,
 body, 
 header, 
 footer, 
@@ -13,16 +13,14 @@ ul, ol, li,
 p, a, span,
 label, input, button {
 	font-family: 'Roboto', arial;
-};
+}; */
 
-body {
+/* body {
 	font-size: 1rem;
 	font-weight: 300;
-}
+} */
 
-.wrapper{
-	padding:20px 180px;
-}
+
 /*==============================================*/
 /* Navigation                                   */
 /*==============================================*/
@@ -31,18 +29,6 @@ body {
  * This section should contain at least the
  * following elements: header, nav, ul, li, a, div.
  */
- nav{
-	position: fixed;
- }
-.navbar-nav{
-	flex-direction: row;
- }
-.nav li{
-	padding-left:20px;
-}
-nav ul{
-	margin-left:400px;
-}
 
 /*==============================================*/
 /* Articles                                     */
@@ -52,6 +38,11 @@ nav ul{
  * This section should contain at least the
  * following elements: h1, h2, section, article.
  */
+
+section {
+	padding-top: 56px;
+}
+
 
 /*==============================================*/
 /* Recipes                                      */
