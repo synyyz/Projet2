@@ -86,7 +86,7 @@ var buildRecettes = function() {
   data.recipes.forEach((recipe, index) => {
     myRecipes.push(
       "<li id='recipe" + index + "' class ='recipe card'>" +
-      "<img class='card-img-top' src='" + recipe.imgUrl + "' alt='No image.'>" +
+      "<img class='card-img-top' src='/assets/" + altImages.recipes[index] + "' alt='No image.'>" +
       "<div class='card-body'>" +
       "<p class='card-text'>" + recipe.description + "</p>" +
       "<p class='card-text'>" + recipe.price + "$</p>" +
